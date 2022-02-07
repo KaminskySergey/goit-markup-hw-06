@@ -31,11 +31,11 @@ color: #E5E5E5;
     
 }
 h1,h2,h3,h4,h5,h6{
-    margin: 0 auto;
+    margin: 0 ;
     
 }
 p{
-    margin: 0 auto;
+    margin: 0;
     
 }
 ul{
@@ -101,7 +101,9 @@ letter-spacing: 0.03em;
 a{
     text-decoration: none;
 }
-
+.header-navigation{
+    margin-left: 93px;
+}
 .header-list-nav, .header-list-adress{
     
     font-weight: 500;
@@ -113,7 +115,7 @@ a{
 }
 .header-list-nav{
     display: flex;
-    margin-left: 93px;
+    
     
 }
 .header-list-adress{
@@ -218,6 +220,7 @@ text-transform: uppercase;
 color: var(--brand-white);
 margin-bottom: 30px;
 width: 696px;
+margin:0 auto;
 }
 .hero-btn {
 background-color: var(--brand-blue);
@@ -264,15 +267,15 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .backdrop.is-hidden .modal{
-    transform: translate(-50%, -50%) scale(1.7);
+    transform: translate(-50%, -50%) scale(1.2);
     
 }
 .modal{
     position: absolute;
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    height: 581px;
 
-    padding: 15px;
+    padding: 39px 40px 41px;
 
     top: 50%;
     left: 50%;
@@ -285,12 +288,9 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     transform: translate(-50%, -50%) scale(0.9);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-close{
-    position: absolute;
-    top: 8px;
-    right: 8px;
-}
+
 .modal-button{
+position: absolute;
 top:8px;
 right:8px;
 width: 30px;
@@ -304,6 +304,7 @@ justify-content: center;
 align-items: center;
 cursor: pointer;
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 .modal-button:hover, .modal-button:focus{
     fill: var(--brand-blue);
@@ -319,13 +320,13 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     margin-left: auto;
     margin-right: auto;
     color: #000000;
-    margin-top: 40px;
-    margin-bottom: 116px;
+    
 
 }
 .label{
     position: relative;
-    margin: 0;
+    
+    margin-bottom: 10px;
     
     display: flex;
     flex-direction: column-reverse;
@@ -335,18 +336,17 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     letter-spacing: 0.01em;
     width: 448px;
 }
-.label + .label{
-    margin-top: 30px;
-}
+
 .label-comment{
-    
     margin-bottom: 20px;
 }
+
 .form-title-text{
     font-family: Roboto;
 font-style: normal;
     font-weight: 700;
     text-align: center;
+    
     width: 448px;
 font-size: 20px;
 line-height: 1.15;
@@ -401,9 +401,9 @@ transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .label-checkbox{
-    
     display: flex;
     align-items: center;
+    
     margin-bottom: 30px;
 
     transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -873,7 +873,7 @@ margin-bottom: 20px;
     fill: currentColor;
 }
 .footer-input{
-    margin-left: 93px;
+    margin-left:auto;
 }
 .footer-btn{
     min-width: 200px;
@@ -913,6 +913,7 @@ background: #2F303A;
 padding-top: 15px;
 padding-bottom: 15px;
 padding-left: 16px;
+color: var(--brand-white);
 }
 .footer-svg{
     fill: currentColor;
